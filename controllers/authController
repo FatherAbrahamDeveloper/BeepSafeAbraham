@@ -256,4 +256,5 @@ const logout = (req, res, next) => {
   });
 };
 
-module.exports = { signup, login, verifyEmail, logout };
+module.exports = { signup, login, verifyEmail, logout, forgotPassword, resetPassword };
+

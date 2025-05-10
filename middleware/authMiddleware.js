@@ -3,7 +3,7 @@ const AppError = require("../error/AppError");
 
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers["authorization"];
-  const token = authHeader && authHeader.split(" ")[1]; // Bearer <token>
+  const token = authHeader && authHeader.split(" ")[1];
 
   if (!token) {
     return next(new AppError("Authentication token required", 401));
@@ -11,7 +11,7 @@ const authenticateToken = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = decoded; // Attach the decoded user (contains userId) to the request
+    req.user = decoded;
     next();
   } catch (error) {
     return next(new AppError("Invalid or expired token", 401));
