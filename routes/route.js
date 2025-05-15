@@ -9,7 +9,7 @@ const contactController = require("../controllers/contactController");
 const inviteController = require("../controllers/inviteController");
 const trustedCircleController = require("../controllers/trustedCircle");
 const emergencyController = require("../controllers/emergency");
-const safeZoneController = require("../controllers/safezoneController");
+const safeZoneController = require("../controllers/safeZoneController");
 const securityAgencyController = require('../controllers/securityAgencyController');
 const { authenticateToken } = require("../middleware/authmiddleware");
 
