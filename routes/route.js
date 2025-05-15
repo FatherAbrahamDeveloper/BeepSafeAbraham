@@ -11,7 +11,7 @@ const trustedCircleController = require("../controllers/trustedCircle");
 const emergencyController = require("../controllers/emergency");
 const safeZoneController = require("../controllers/safeZoneController");
 const securityAgencyController = require('../controllers/securityAgencyController');
-const { authenticateToken } = require("../middleware/authmiddleware");
+const { authenticateToken } = require("../middleware/authMiddleware");
 
 
 // Debug imports
